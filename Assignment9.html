@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration</title>
+</head>
+<body>
+    <header>
+        <h1>Employee Registration Form</h1>
+    </header>
+
+    <section>
+        <form action="submit_form.php" method="post">
+            <label for="empName">Full Name:</label>
+            <input type="text" id="empName" name="empName" required><br><br>
+
+            <label for="empEmail">Email:</label>
+            <input type="email" id="empEmail" name="empEmail" required><br><br>
+
+            <label for="empPhone">Phone Number:</label>
+            <input type="tel" id="empPhone" name="empPhone" required><br><br>
+
+            <label for="empDOB">Date of Birth:</label>
+            <input type="date" id="empDOB" name="empDOB"><br><br>
+
+            <label for="empGender">Gender:</label>
+            <select id="empGender" name="empGender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br><br>
+
+            <label for="empDept">Department:</label>
+            <input type="text" id="empDept" name="empDept" required><br><br>
+
+            <label for="empPosition">Position:</label>
+            <input type="text" id="empPosition" name="empPosition" required><br><br>
+
+            <label for="empResume">Upload Resume:</label>
+            <input type="file" id="empResume" name="empResume"><br><br>
+
+            <label for="empAddress">Address:</label><br>
+            <textarea id="empAddress" name="empAddress" rows="4" cols="40" required></textarea><br><br>
+
+            <input type="submit" value="Register">
+            <input type="reset" value="Clear">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Employee Registration System</p>
+    </footer>
+</body>
+</html>
